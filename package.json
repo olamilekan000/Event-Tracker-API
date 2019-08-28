@@ -1,0 +1,45 @@
+{
+  "name": "Event-Tracker-API",
+  "version": "1.0.0",
+  "description": "A git event tracking api",
+  "main": "app.js",
+  "scripts": {
+    "dev": "SET NODE_ENV=dev&& nodemon --exec babel-node app.js",
+    "buildApp": "babel app.js -d build && babel ./server -d build/server",
+    "start": "node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olamilekan000/Event-Tracker-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olamilekan000/Event-Tracker-API/issues"
+  },
+  "homepage": "https://github.com/olamilekan000/Event-Tracker-API#readme",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "body-parser": "^1.19.0",
+    "camo": "^0.12.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "helmet": "^3.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nedb": "^1.8.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "babel-preset-camo": "0.0.1",
+    "babel-preset-env": "^1.7.0"
+  }
+}
