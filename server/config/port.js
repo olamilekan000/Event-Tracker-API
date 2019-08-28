@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'test') {
 }else if (process.env.NODE_ENV === 'dev') {
 	PORT = 9097
 }else {
-	PORT = 9095 || process.env.PORT
+	PORT = process.env.PORT || 9095
 }
 
 export default PORT;
